@@ -1,0 +1,116 @@
+*** M.A.M.E. SDL Plus main changes ***
+For a full overview of this M.A.M.E. read here:
+https://retropie-italia.it/viewtopic.php?p=8301#p8301
+-----------------------------------------------------
+
+v2.71 08/11/2022
+- Fixed a problem when configuring input through Tab menù
+
+v2.7 06/11/2022
+- Added real CRT versions
+- Added a "software" fallback if accelerated renderer isn't found
+- Improved error log during audio device selection
+- Updated 0.61+.dat
+- Removed MESS from code (additional source code cleaning)
+
+v2.6 07/09/2022
+- Removed headphones command line option
+- Added audio-device command line option
+- Modified raiden romset from v0.68
+- Implemented crusnusa (midvunit.c) from v0.63
+- Added new generated 0.61+.dat according to last changes
+
+v2.5 14/02/2022
+- Reverted src/palette.* to original 0.61 source code plus an addition (from 0.78 source code) for ported games
+- Added ported games list in the code in order to correctly select the right condition in src/palette.c
+- Reverted NAMCO SYSTEM I code to original 0.61 source code
+- Added fullscreen video rotation options
+- Added new generated 0.61+.dat according to last changes
+- Updated year in copyright info
+- Little changes to make compiler happy :-)
+
+
+v2.4 07/02/2022
+- Fixed problem with namcos1 games (ported code from 0.78, original 0.61 code was unmodified...)
+- Added new generated 0.61+.dat according to namcos1 changes
+
+
+v2.3 29/07/2021
+- Added "analog-boost" command line parameter that increases trackball/spinner/mouse sensitivity
+- Added the possibility to enable/disable analog boost at runtime with a configurable button on the UI
+
+
+v2.2 24/06/2021
+- Added 3 mouse buttons input
+- Rendering code change (maybe a little speedup with 16 bit depth games)
+- Fixed a bug with 32 bit depth games (game screen was black)
+- Fixed a bug on memory clean before application exits
+- Fixed original M.A.M.E. source code in order to avoid multiple definition error on newer compiler
+
+
+v2.1 16/06/2021
+- Added single player trackball/spinner support for Windows and OSX/macOS versions
+- Removed additional trackball/spinner sensitivity logic on Raspberry Pi and Ubuntu-based versions
+
+
+v2.0 15/06/2021
+- Released OSX/macOS version (same basecode of v2.0)
+
+
+v2.0 14/06/2021
+- Added support for 4 spinners
+- Added CRT pixel effect
+- Added CRT pixel effect with scanlines flickering
+- Added CRT pixel effect with pixel shape flickering
+- Renamed "scanlines" command line parameter to "simple-scanlines"
+- Modified existing scanlines effect (now "simple-scanlines")
+- All video effects are now disabled by default
+- Removed "trackball-sensitivity" command line parameter
+- Fixed a pontential bug: scanlines texture is now cleaned before use
+- Code cleaning/refactoring
+- Application log changes
+- Started debug of OSX/macOS version (not yet public released)
+
+
+v1.5 18/05/2021
+- Artwork .lyt file now accepts new "ArtworkType" parameter for merged or ontop artwork positioning
+- A log file named "M.A.M.E. SDL Plus.log" is created each time the emulator runs. It contains all useful information that in previous versions were printed on shell
+
+
+v1.41 26/04/2021
+- Changed compilation flags (Raspberry Pi versions) that introduce sound noise in some games (i.e. Wizard of Wor, Gorf...)
+
+
+v1.4 24/04/2021
+- Added support for 4 trackballs
+- Vertical synchronization is now enabled by default
+- Changed "anisotropic-filter" command line parameter to "best-filter" (SDL currently supports only linear interpolation)
+
+
+v.1.32 09/04/2021
+- Bug fix: wrong artwork/game positioning (introduced in v1.31) in some cases
+
+
+v1.31 07/04/2021
+- Bug fix: artwork/overlay transparency was not set correctly in some cases
+
+
+v1.3 06/04/2021
+- Now it's possible to use linear or anisotropic video filter using specific command line parameter
+- Modified Cinematronics games driver with code based on v0.78
+
+
+v1.2 30/03/2021
+- Now it's possible to activate Vertical synchronization using "vsync" command line parameter
+
+
+v1.1 26/03/2021
+- Added World Rally from 0.126 and other lower versions
+- Added Golden Axe - The Revenge of Death Adder from 0.68
+- Added Mega Man 2: The Power Fighters from 0.78
+- Renamed application in M.A.M.E. SDL Plus
+
+
+v1.0 27/02/2021
+- First official (not labeled "Beta") release after 1 year development
+
