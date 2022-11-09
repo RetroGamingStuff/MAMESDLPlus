@@ -1,6 +1,8 @@
 # M.A.M.E. SDL Plus
 Un veloce e ottimizzato emulatore M.A.M.E. multipiattaforma con un __effetto CRT reale__!
 
+[![paypal](https://www.paypalobjects.com/it_IT/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LDCDAQUTH5A9Y)
+
 ![RealCRT](/images/ffight_real-crt.png)
 
 ### Indice dei contenuti:
