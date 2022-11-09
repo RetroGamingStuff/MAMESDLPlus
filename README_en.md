@@ -757,6 +757,8 @@ If by increasing the sensitivity of the device through the M.A.M.E. you do not g
 In addition to this in the M.A.M.E. menu there is the possibility to configure the __Boost Analog Sensitivity On/Off__ option to enable/disable the sensitivity increase using a button while M.A.M.E. is running
 
 ### RASPBERRY PI OS VERSION
+> The emulator was compiled as a __32 bit executable__, following step are valid for a 32 bit system
+
 Currently the __SDL Image__ library that can be installed with Raspberry Pi OS (formerly Raspbian), the operating system underlying Raspberry Pi, is an older version that relies on a version of the __libpng__ library (v1.6.36) which contains a bug. In order to use the emulator correctly you have to compile both libraries from the source code with some simple steps that I am going to show you
 
 > If you have the library installed remove it with this command:
@@ -799,7 +801,7 @@ At this point you can run the emulator from the command line or integrate it int
 It depends on the version of the operating system you are using, check the log and verify which audio devices are present as described [here](README_en.md#audio-device-selection)
 
 ### UBUNTU VERSION AND DERIVATIVES
-The emulator was compiled on Ubuntu 20.04 (may not work on older versions) as a __32-bit executable__ and, as with the Raspberry Pi, you must have the __SDL__ and __SDL Image__ libraries installed, both in __32-bit version__. I'll explain in a few simple steps how to compile them from source.
+The emulator was compiled on Ubuntu 20.04 (may not work on older versions) as a __32 bit executable__ and, as with the Raspberry Pi, you must have the __SDL__ and __SDL Image__ libraries installed, both in __32 bit version__. I'll explain in a few simple steps how to compile them from source.
 
 _*Prerequisites*_
 From the terminal execute these commands in sequence followed by enter:

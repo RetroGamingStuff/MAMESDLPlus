@@ -755,6 +755,8 @@ Se aumentando la sensibilità del dispositivo tramite il menù del M.A.M.E. non 
 Oltre a ciò nel menù del M.A.M.E. c'è la possibilità di configurare l'opzione __Boost Analog Sensitivity On/Off__ per attivare/disattivare l'aumento di sensibilità con il M.A.M.E. in esecuzione premendo semplicemente un pulsante
 
 ### VERSIONE RASPBERRY PI OS
+> L'emulatore è stato compilato come __eseguibile a 32 bit__, gli step seguenti sono validi per un sistema a 32 bit
+
 Attualmente la libreria __SDL Image__ installabile con Raspberry Pi OS (ex Raspbian), il sistema operativo alla base di Raspberry Pi, è una versione non recentissima che si appoggia a una versione della libreria __libpng__ (v1.6.36) che contiene un bug. Per poter quindi usare correttamente l'emulatore dovete compilare entrambe queste librerie dal codice sorgente con alcuni semplici passi che vado a indicarvi
 
 > Se avete la libreria installata rimuovetela con questo comando:
