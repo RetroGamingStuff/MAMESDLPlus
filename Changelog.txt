@@ -3,6 +3,9 @@ For a full overview of this M.A.M.E. read here:
 https://retropie-italia.it/viewtopic.php?p=8301#p8301
 -----------------------------------------------------
 
+v2.72 10/11/2022
+- Added real CRT versions for Windows and OSX/macOS
+
 v2.71 08/11/2022
 - Fixed a problem when configuring input through Tab menù
 

@@ -74,7 +74,7 @@ For the Raspberry Pi v1 overclocking is required (as with all M.A.M.E.), follow 
 ### REAL CRT VERSION
 The __Real CRT__ version of the emulator is a special version with an effect realized by directly programming a low level shader with OpenGL. Currently, it is only available for Raspberry Pi v4 and x86 architecture systems. The executable to use is the one with the suffix __real_crt__. In this mode, of course, no other video effects are available
 
-> If you have a poor perfomance with Raspberry Pi v4 it's necessary to rebuild Mesa driver, and the other needed libraries, from scratch. I'll add a guide as soon as possible
+> If you have a poor perfomance with Raspberry Pi v4 check your power supply and related under voltage message, otherwise it could be necessary to rebuild Mesa driver, SDL library, and the other needed libraries, from scratch. I'll add a guide, or a ready for use image, if requested by the user
 
 ### DEMO VIDEOS
 To give you an idea of ​​the work done right away, here are a couple of demonstration videos!
