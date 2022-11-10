@@ -74,6 +74,8 @@ Per il Raspberry Pi __v1__ è richiesto (come con tutti i M.A.M.E.) l'overclock,
 ### VERSIONE REAL CRT
 La versione dell'emulatore __Real CRT__ è una versione speciale con un effetto realizzato sfruttando direttamente la programmazione di uno shader a basso livello con OpenGL. Attualmente, è disponibile soltanto per Raspberry Pi v4 e per sistemi con architettura x86. L'eseguibile da utilizzare è quello con il suffisso __real_crt__. In questa modalità ovviamente non è disponibile nessun altro effetto video
 
+> Se riscontrate delle prestazioni limitate con il Raspberry Pi v4 è necessario ricompilare il driver Mesa, e le altre librerie necessarie, da zero. Aggiungerò una guida il prima possibile
+
 ### VIDEO DIMOSTRATIVI
 Per darvi subito un'idea del lavoro svolto ecco un paio di video dimostrativi!
 
@@ -761,6 +763,8 @@ Attualmente la libreria __SDL Image__ installabile con Raspberry Pi OS (ex Raspb
 
 > Se avete la libreria installata rimuovetela con questo comando:
 `sudo apt remove --purge libsdl2-image-2.0-0 libsdl2-image-dev`
+Se mancante, installate la libreria SDL di sviluppo con questo comando:
+`sudo apt install libsdl2-dev`
 
 Le librerie necessarie sono queste, [libpng16.zip](https://github.com/glennrp/libpng/archive/libpng16.zip) e [SDL2_image-2.0.5.zip](https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.5.zip), per installarle eseguite questi comandi in sequenza (tra un passaggio e l'altro dovrete attendere un po' di tempo, aspettate che ogni operazione venga completata correttamente):
 
@@ -785,7 +789,7 @@ wget https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.5.zip
 unzip SDL2_image-2.0.5.zip
 cd SDL2_image-2.0.5/
 mkdir build
-cd build
+cd build/
 ../configure
 make -j$(nproc)
 sudo make install
@@ -830,7 +834,7 @@ Scaricate SDL Image da [qui](https://www.libsdl.org/projects/SDL_image/release/S
 ```
 cd SDL_IMAGE
 mkdir build
-cd build
+cd build/
 ../configure "CFLAGS=-m32" "CXXFLAGS=-m32" "LDFLAGS=-m32" --libdir=/usr/lib32
 make -j$(nproc)
 sudo make install
@@ -869,7 +873,7 @@ Scaricate SDL Image da [qui](https://www.libsdl.org/projects/SDL_image/release/S
 ```
 cd SDL_IMAGE
 mkdir build
-cd build
+cd build/
 CFLAGS=-m32 CXXFLAGS=-m32 LDFLAGS=-m32 ../configure
 make -j$(nproc)
 sudo make install
